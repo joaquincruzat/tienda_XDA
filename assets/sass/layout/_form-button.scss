@@ -1,0 +1,16 @@
+.form-button {
+    display: inline-block;
+    background-color: $app-white;
+    height: 50px;
+    width: 50px;
+&__text {
+    transform: rotate(90deg);
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: none;
+    font-size: $x-large;
+    font-family: $primary-font;
+    color: $app-smokyblack;
+    font-weight: $bold;
+}
+}

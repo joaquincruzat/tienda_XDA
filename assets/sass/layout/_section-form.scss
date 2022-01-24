@@ -1,0 +1,17 @@
+.section-form {
+    background-color: $app-smokyblack;
+    padding: 3%;
+    width: 85%;
+    display: inline-block;
+
+&__title {
+    color: $app-white;
+    font-family: $primary-font;
+    font-size: $xx-large;
+}
+&__subtitle {
+    color: $app-white;
+    font-family: $primary-font;
+    font-size: $large;
+}
+}

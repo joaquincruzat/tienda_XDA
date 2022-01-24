@@ -11,14 +11,16 @@
 @import 'components/navigation';
 
 //Layout
+@import 'layout/form-button';
 @import 'layout/header';
 @import 'layout/hero-section';
+@import 'layout/section-main';
 @import 'layout/nav';
 @import 'layout/section-form';
+
 
 //Pages
 
 //Themes
 
 //Vendors
-@import 'vendors/bootstrap/bootstrap.scss';

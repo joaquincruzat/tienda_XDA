@@ -1,0 +1,23 @@
+.navbar {
+    padding: 0px;
+    margin: 0px;
+    background-color: $app-white;
+  
+    &-brand-container {
+      padding: 20px;
+      margin: 0;
+      background-color: $app-smokyblack;
+    }
+  
+    &-brand {
+      margin: 0;
+      color: $app-white !important;
+      font-family: $primary-font;
+    }
+}
+
+.nav-item {
+  font-family: $secondary-font;
+  font-weight: $bold;
+  color: $app-smokyblack;
+}
