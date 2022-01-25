@@ -15,67 +15,59 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Tienda XDA</title>
 </head>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="navbar-brand-container">
-            <a class="navbar-brand mx-auto" href="#">XDA</a>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto mr-4">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Mujer</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Hombre</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Accesorios</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-</header>
 
 <body>
-    <main class="main">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div> <img class="hero-section__img" src="assets/img/imagen1.png" alt=""></div>
-                    <section class="main__card col-sm-12">
-                        <h1 class="main__title mt-5">LOREM IPSUM AD VALOREM</h1>
-                        <p class="main__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Exercitationem unde soluta eos asperiores nesciunt nam ratione nostrum autem voluptate
-                            dignissimos deserunt harum corrupti et repellat neque, suscipit animi consectetur dicta.</p>
-                    </section>
-                </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="navbar-brand-container">
+                <a class="navbar-brand mx-auto" href="#">XDA</a>
             </div>
-        </div>
-        </div>
-        <section class="section-form">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="section-form__title mt-2">Newsletter</h2>
-                        <h3 class="section-form__subtitle">Correo Electrónico</h3>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Ingresa tu correo electrónico"
-                                aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        </div>
-                    </div>
-                </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto mr-4">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Mujer</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Hombre</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Accesorios</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                </ul>
             </div>
-        </section>
-        <div class="form-button">
-            <p class="form-button__text ml-1 p-3 ml-sm-1 ml-lg-5 p-sm- p-lg-5">Suscribir</p>
+        </nav>
+    </header>
+    <main class="body__container">
+        <div class="body__row">
+            <section class="hero-section">
+                <img class="hero-section__img" src="assets/img/imagen1.png" alt="">
+            </section>
+            <section class="main__card">
+                <h1 class="main__title mt-5">LOREM IPSUM AD VALOREM</h1>
+                <p class="main__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem unde soluta eos asperiores nesciunt nam ratione nostrum autem voluptate
+                    dignissimos deserunt harum corrupti et repellat neque, suscipit animi consectetur dicta.
+                </p>
+                <div class="main__button">Ir a tienda</div>
+            </section>
+            <section class="section-form">
+                <h2 class="section-form__title mt-2">Newsletter</h2>
+                <h3 class="section-form__subtitle">Correo Electrónico</h3>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Ingresa tu correo electrónico"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+            </section>
+            <section class="form-button">
+                <div class="form-button__text">Suscribir</div>
+            </section>
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -88,5 +80,6 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
+
 
 </html>

@@ -1,6 +1,13 @@
-* {
+body, html {
+  height: 100vh;
+  width: 100vw;
   margin: 0;
   padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 .navbar {
@@ -26,31 +33,78 @@
 }
 
 .form-button {
-  display: inline-block;
-  background-color: #fff;
-  height: 50px;
-  width: 50px;
+  width: 100%;
+  height: 50%;
+  grid-area: form-button;
+  padding: 30%;
 }
 .form-button__text {
-  transform: rotate(90deg);
-  text-align: center;
-  vertical-align: middle;
-  letter-spacing: none;
-  font-size: 20px;
   font-family: "Old Standard TT", serif;
-  color: #0C0910;
+  font-size: 20px;
   font-weight: 700;
+  transform: rotate(90deg);
+  letter-spacing: none;
 }
 
+@media (max-width: 992px) {
+  .form-button {
+    width: 100%;
+    height: 100%;
+    grid-area: form-button;
+    padding: 50%;
+  }
+}
+@media (min-width: 993px) {
+  .form-button {
+    width: 100%;
+    height: 100%;
+    grid-area: form-button;
+    padding: 50%;
+  }
+}
+.body__container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.body__row {
+  display: grid;
+  grid-template-columns: 1fr 0.1fr 1fr;
+  grid-template-rows: 1fr 0.25fr;
+  grid-template-areas: "main__card . hero-section" "section-form form-button hero-section";
+}
+
+@media (max-width: 992px) {
+  .body__row {
+    display: grid;
+    grid-template-columns: 1fr 0.25fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr;
+    grid-template-areas: "hero-section hero-section" "main__card main__card" "section-form form-button";
+  }
+}
 .hero-section {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
+  grid-area: hero-section;
 }
 .hero-section__img {
   width: 100%;
+  height: auto;
   margin: 0;
   padding: 0%;
-  display: flex;
+}
+
+@media (min-width: 993px) {
+  .hero-section__img {
+    width: 55vw;
+    height: auto;
+  }
+}
+.main__card {
+  grid-area: main__card;
+  margin: 5%;
 }
 
 .main__title {
@@ -68,11 +122,23 @@
   color: #A6A5AB;
 }
 
+.main__button {
+  width: 150px;
+  height: 50px;
+  border: #0C0910;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  border-style: solid;
+  text-align: center;
+  padding-top: 2%;
+}
+
 .section-form {
   background-color: #0C0910;
-  padding: 3%;
-  width: 85%;
-  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  grid-area: section-form;
 }
 .section-form__title {
   color: #fff;

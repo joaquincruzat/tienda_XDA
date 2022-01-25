@@ -1,3 +1,8 @@
+.main__card {
+    grid-area: main__card;
+    margin: 5%;
+}
+
 .main__title {
     font-family: $primary-font;
     color: $app-smokyblack;
@@ -12,6 +17,16 @@
     color: $app-quicksilver;
 }
 
+.main__button {
+    width: 150px;
+    height: 50px;
+    border: $app-smokyblack;
+    font-family: $secondary-font;
+    font-weight: $bold;
+    border-style: solid;
+    text-align: center;
+    padding-top: 2%;
+}
 
 
 

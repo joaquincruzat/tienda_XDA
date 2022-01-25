@@ -1,16 +1,33 @@
 .form-button {
-    display: inline-block;
-    background-color: $app-white;
-    height: 50px;
-    width: 50px;
+    width: 100%;
+    height: 50%;
+    grid-area: form-button;
+    padding: 30%;
+
 &__text {
-    transform: rotate(90deg);
-    text-align: center;
-    vertical-align: middle;
-    letter-spacing: none;
-    font-size: $x-large;
     font-family: $primary-font;
-    color: $app-smokyblack;
+    font-size: $x-large;
     font-weight: $bold;
+    transform: rotate(90deg);
+    letter-spacing: none;
 }
+}
+
+@media (max-width: 992px) {
+    .form-button {
+        width: 100%;
+        height: 100%;
+        grid-area: form-button;
+        padding: 50%;
+    
+    }
+}
+@media (min-width: 993px) {
+    .form-button {
+        width: 100%;
+        height: 100%;
+        grid-area: form-button;
+        padding: 50%;
+    
+    }
 }

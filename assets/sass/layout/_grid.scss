@@ -1,0 +1,22 @@
+.body__container {
+    margin:0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.body__row {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 1fr;
+    grid-template-rows: 1fr 0.25fr;
+    grid-template-areas: "main__card . hero-section" "section-form form-button hero-section";
+
+}
+//Grid tamaños small, medium
+@media (max-width: 992px) {
+    .body__row {
+        display: grid;
+        grid-template-columns: 1fr 0.25fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr;
+        grid-template-areas: "hero-section hero-section" "main__card main__card" "section-form form-button"
+    }
+    }
